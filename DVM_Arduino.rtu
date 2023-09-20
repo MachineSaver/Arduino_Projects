@@ -1,0 +1,93 @@
+<!--MB Client Configuration File-->
+<ModbusRTUClient>
+  <Version>1.0</Version>
+  <Options>
+    <RTU_Number>1</RTU_Number>
+    <use_tcp>false</use_tcp>
+    <RS232_Port>COM3</RS232_Port>
+    <RS232_BaudRate>115200</RS232_BaudRate>
+    <RS232_Parity>0</RS232_Parity>
+    <RS232_DataBits>8</RS232_DataBits>
+    <RS232_StopBits>1</RS232_StopBits>
+    <TCP_Addr>127.0.0.1</TCP_Addr>
+    <TCP_Port>502</TCP_Port>
+    <Polling_Interval>60</Polling_Interval>
+    <InterpacketDelay>1</InterpacketDelay>
+    <HandshakeMode>0</HandshakeMode>
+    <ReadTimeout>5000</ReadTimeout>
+    <WriteTimeout>1000</WriteTimeout>
+    <SingleReadMode>false</SingleReadMode>
+    <BytesWriteMode>AllAtOnce</BytesWriteMode>
+    <WritingInterval>5</WritingInterval>
+    <ModbusWriteCommand>0</ModbusWriteCommand>
+    <MainViewFont>
+      <FontName>Arial</FontName>
+      <FontSize>10</FontSize>
+      <FontStyle>0</FontStyle>
+    </MainViewFont>
+    <RegisterColorMap />
+    <GroupColorMap />
+    <LoggingToFile>false</LoggingToFile>
+    <LogFilePath>C:\Users\machine_saver\AppData\Roaming\BiPOM.ModbusClient\default.rtulog</LogFilePath>
+    <LogPeriod>10</LogPeriod>
+    <LoggingMsgToFile>false</LoggingMsgToFile>
+    <MsgFilePath>C:\Users\machine_saver\AppData\Roaming\BiPOM.ModbusClient\mb_proto_msg.log</MsgFilePath>
+    <SortColumn>-1</SortColumn>
+    <SortOrder>ASC</SortOrder>
+    <RegisterAddressBase>1</RegisterAddressBase>
+    <RegisterAddress6Digits>false</RegisterAddress6Digits>
+  </Options>
+  <Registers>
+    <register>
+      <Alias>ADC_Count</Alias>
+      <Address>40001</Address>
+      <ValueType>0</ValueType>
+      <Units></Units>
+      <FloatFormat>0</FloatFormat>
+      <ShowAs>0</ShowAs>
+      <LeadingZeroes>false</LeadingZeroes>
+      <Group></Group>
+      <Enabled>true</Enabled>
+    </register>
+    <register>
+      <Alias>3.3 Volt Scale</Alias>
+      <Address>40003</Address>
+      <ValueType>4</ValueType>
+      <Units></Units>
+      <FloatFormat>3</FloatFormat>
+      <ShowAs>0</ShowAs>
+      <LeadingZeroes>false</LeadingZeroes>
+      <Group></Group>
+      <Enabled>true</Enabled>
+    </register>
+    <register>
+      <Alias>24.0 Volt Scale</Alias>
+      <Address>40005</Address>
+      <ValueType>4</ValueType>
+      <Units></Units>
+      <FloatFormat>3</FloatFormat>
+      <ShowAs>0</ShowAs>
+      <LeadingZeroes>false</LeadingZeroes>
+      <Group></Group>
+      <Enabled>true</Enabled>
+    </register>
+    <register>
+      <Alias>Mils</Alias>
+      <Address>40007</Address>
+      <ValueType>4</ValueType>
+      <Units></Units>
+      <FloatFormat>3</FloatFormat>
+      <ShowAs>0</ShowAs>
+      <LeadingZeroes>false</LeadingZeroes>
+      <Group></Group>
+      <Enabled>true</Enabled>
+    </register>
+  </Registers>
+  <Groups>
+    <Group>Default</Group>
+    <Group></Group>
+    <LastGroup></LastGroup>
+  </Groups>
+  <RecentAddresses />
+  <PredefinedValues />
+</ModbusRTUClient>
